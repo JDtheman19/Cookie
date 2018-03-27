@@ -13,6 +13,12 @@ body{
 html{
   overflow:hidden;
 }
+#inputsuggestion{
+width:200px;
+right:calc(50% - 100px);
+background-color:gray;
+display:none;
+}
 #cheatboxlol{
   position:absolute;
   background:#000;
