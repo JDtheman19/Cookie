@@ -46,6 +46,20 @@ function submit_suggestion(text){
     suggesthttp.open("GET", "suggest.php?text=" + encodeURI(text));
     suggesthttp.send();
 }
+var showsug = 0;
+
+function inputsuggestion(){
+ if(){
+    showsug = 0;
+    getId("inputsuggestion").style.display = none;
+ }else{
+    showsug = 1;
+    getId("inputsuggestion").style.display = block;
+ }
+}
+    
+    
+}
 // module system to track modules for easier error handling
 // remember to update module to track what is currently happening
 var module = 'initializing Module system';
