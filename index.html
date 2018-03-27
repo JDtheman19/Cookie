@@ -111,8 +111,10 @@
     <button id="updates" style="position:absolute;left:10px;bottom:70px;display:block;z-index:1000;" onclick="showUpdate()">Updates</button>
     <button style="position:absolute;left:10px;bottom:50px;display:block;z-index:1000;" onclick="if(confirm('Those poor cookies. You sure you want to delete them cookies?')){window.localStorage.setItem('startOver','true');window.location='/Cookie'}">Delete all progress</button>
     <button onclick='toggleHowPlay()'>How to play</button><br><br>
+     <!-- will work on it later   
     <button onclick='exportSave()'>Export Save</button><br>
         <button onclick='importSave()'>Import Save</button>
+        --->
         <div id="counter"><span id="cookieNumber">0</span> Cookies</div>
         <div id="cps"><span id="cpsNumber">0</span> Automatic Clicks per Second (CPS)</div>
         <div id="mcps"><span id="mcpsNumber">0</span> Manual Clicks per Second (MPS)</div>
@@ -144,7 +146,7 @@
             V 0.1A - The biggening of production!
             </div>
                 <div id="inputsuggestion">
-                 <textarea placeholder="Enter Suggestion" id="suggestions" style="height:250px;resize:none"></textarea>
+                 <textarea placeholder="Enter Suggestion" id="suggestions" style="height:250px;resize:none"></textarea><br>
                  <button id="SubmitSuggestion" onclick="submit_suggestion()">Submit</button>
         </div>
         <div id="cheatboxlol"><div onclick="closeCheats" id="CloseTab">X</div>
