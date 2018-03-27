@@ -34,12 +34,19 @@ var randomError = [
     'I\'m afraid... I\'m afraid, Dave... Dave, my mind is going... I can feel it... I can feel it... My mind is going...', //wtf?
     'WHAT DID YOU DO! THE WORLD IS GOING TO END! SOMEONE SA....'
 ];
-function SaveText(f, t, output){
-
+function SaveText(file, content){
+    window.localStorage.setItem(file, content);
+}
+function LoadText(file){
+    return window.localStorage.getItem(file);
 }
 function submit_suggestion(text){
-    
-   
+    //another file will handle this request, let me make that file before this goes in
+    var suggesthttp = new XMLHttpRequest();
+    suggesthttp.open("POST", "suggest.php");
+    var suggestform = new FormData();
+    suggestform.append('suggestion', text);
+    suggesthttp.send(suggestform);
 }
 // module system to track modules for easier error handling
 // remember to update module to track what is currently happening
