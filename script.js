@@ -57,9 +57,7 @@ function inputsuggestion(){
     getId("inputsuggestion").style.display = "block";
  }
 }
-    
-    
-}
+
 // module system to track modules for easier error handling
 // remember to update module to track what is currently happening
 var module = 'initializing Module system';
