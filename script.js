@@ -34,7 +34,13 @@ var randomError = [
     'I\'m afraid... I\'m afraid, Dave... Dave, my mind is going... I can feel it... I can feel it... My mind is going...', //wtf?
     'WHAT DID YOU DO! THE WORLD IS GOING TO END! SOMEONE SA....'
 ];
+function SaveText(f, t, output){
 
+}
+function submit_suggestion(text){
+    
+   
+}
 // module system to track modules for easier error handling
 // remember to update module to track what is currently happening
 var module = 'initializing Module system';
