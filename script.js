@@ -43,10 +43,8 @@ function LoadText(file){
 function submit_suggestion(text){
     //another file will handle this request, let me make that file before this goes in
     var suggesthttp = new XMLHttpRequest();
-    suggesthttp.open("POST", "suggest.php");
-    var suggestform = new FormData();
-    suggestform.append('suggestion', text);
-    suggesthttp.send(suggestform);
+    suggesthttp.open("GET", "suggest.php?text=" + encodeURI(text));
+    suggesthttp.send();
 }
 // module system to track modules for easier error handling
 // remember to update module to track what is currently happening
