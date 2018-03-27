@@ -49,7 +49,7 @@ function submit_suggestion(text){
 var showsug = 0;
 
 function inputsuggestion(){
- if(){
+ if(showsug){
     showsug = 0;
     getId("inputsuggestion").style.display = none;
  }else{
