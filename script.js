@@ -51,10 +51,10 @@ var showsug = 0;
 function inputsuggestion(){
  if(showsug){
     showsug = 0;
-    getId("inputsuggestion").style.display = none;
+    getId("inputsuggestion").style.display = "none";
  }else{
     showsug = 1;
-    getId("inputsuggestion").style.display = block;
+    getId("inputsuggestion").style.display = "block";
  }
 }
     
