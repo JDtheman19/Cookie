@@ -313,7 +313,10 @@ input:checked + .slider:before {
   right:0;
   bottom:-10px;
 }
-
+.cpsNS{
+  position:absolute;
+  left:0px;
+}
 .floatingCursor{
   position:absolute;
   transition:0.1s;
