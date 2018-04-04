@@ -316,6 +316,8 @@ input:checked + .slider:before {
 .cpsNS{
   position:absolute;
   left:0px;
+  padding-left:55px;
+  font-size:10px
 }
 .floatingCursor{
   position:absolute;
